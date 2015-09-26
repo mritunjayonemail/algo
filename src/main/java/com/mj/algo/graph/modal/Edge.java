@@ -39,7 +39,7 @@ public class Edge<T> implements Comparable<Edge>{
 		this.weight = weight;
 	}
 
-	@Override
+	//@Override
 	public int compareTo(Edge o) {
 		// TODO Auto-generated method stub
 		if(weight<o.getWeight()){
@@ -47,5 +47,7 @@ public class Edge<T> implements Comparable<Edge>{
 		}
 		return 0;
 	}
+	
+
 
 }

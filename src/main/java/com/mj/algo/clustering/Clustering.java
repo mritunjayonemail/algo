@@ -28,7 +28,7 @@ public class Clustering {
 			this.cost = cost;
 		}
 
-		@Override
+		//@Override
 		public int compareTo(Edge arg0) {
 			if (this.cost >= arg0.cost)
 				return 1;
