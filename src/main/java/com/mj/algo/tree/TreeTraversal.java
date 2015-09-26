@@ -81,6 +81,43 @@ public class TreeTraversal {
 		
 	}
 	
+	/*
+	 * Find the algorithm to find the 'next' node(i.e. in order successor) of a given node
+	 * in a binary search tree.
+	 */
+	/*public Tree inOrderSuccessor(Tree node){
+		if(node == null){
+			return null;
+		}
+		if(node.getRight()!=null){
+			return leftMostChild(node);
+		}
+		else {
+			Tree q = node;
+			Tree x = q.getParent();
+			while(x!=null&& x.getLeft()!=q){
+				q=x;
+				x=x.getParent();
+			}
+		}
+		return x;
+		
+	}*/
+	
+	/*
+	 * Method returns leftmost child of a node
+	 */
+	public Tree leftMostChild(Tree node){
+		if(node == null){
+			return null;
+		}
+		while(node.getLeft()!=null){
+			node = node.getLeft();
+		}
+		return node;
+	}
+	
+	
 	public static void main(String args[]){
 		Tree child11 = new Tree("D", null, null);
 		Tree child22 = new Tree("E", null, null);
