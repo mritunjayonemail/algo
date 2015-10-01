@@ -1,4 +1,4 @@
-package com.mj.algo.misc;
+package com.mj.algo.recursion;
 
 /*
  * All combination of a input integer array
