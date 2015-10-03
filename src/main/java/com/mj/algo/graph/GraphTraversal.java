@@ -17,6 +17,9 @@ public class GraphTraversal {
 	Stack<GraphNode> stack = new Stack<GraphNode>();
 	Queue<GraphNode> queue = new PriorityQueue<GraphNode>();
 	
+	/*
+	 * BFS
+	 */
 	private void bfs(GraphNode root){
 		
 	  int n = getGraphSize(root);
@@ -45,6 +48,9 @@ public class GraphTraversal {
        
 	}
 	
+	/*
+	 * DFS
+	 */
 	private void dfs(GraphNode root){
 		
 		  int n = getGraphSize(root);

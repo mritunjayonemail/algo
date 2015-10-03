@@ -1,4 +1,4 @@
-package com.mj.algo.dynamic;
+package com.mj.algo.obsolete;
 
 public class CountCoins {
 	

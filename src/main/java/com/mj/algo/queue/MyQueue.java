@@ -2,6 +2,9 @@ package com.mj.algo.queue;
 
 import java.util.Stack;
 
+/*
+ * Queue implemntation using two queue
+ */
 public class MyQueue<T> {
 	
 	private Stack<T> newStack;

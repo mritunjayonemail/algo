@@ -1,4 +1,4 @@
-package com.mj.algo.file;
+package com.mj.algo.obsolete;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

@@ -2,6 +2,9 @@ package com.mj.algo.graph;
 
 import com.mj.algo.graph.modal.Graph;
 
+/*
+ * Graph utility function
+ */
 public class GraphUtil {
 	
 	
