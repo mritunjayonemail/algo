@@ -16,7 +16,7 @@ public class GraphUtil {
 	    return find(parent, parent[i]);
  }
  
- //A utility function to do union of two subsets 
+ // A utility function to do union of two subsets 
  private static void Union(int parent[], int x, int y)
  {
    int xset = find(parent, x);

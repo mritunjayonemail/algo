@@ -7,29 +7,37 @@ public class MaxRepeating {
 	
 	private static final int maxRepeating(int[] input, int k){
 		int size = input.length;
+		int []count = new int[k];
+		
 		for(int index =0 ; index<size; index++){
-			input[input[index]%k] += k;
+			count[input[index]%size] += size;
 		}
 		
-		int max = input[0], result = 0;
-	    for (int i = 1; i < size; i++)
+		int max = Integer.MIN_VALUE;
+		int result = -1;
+	    for (int i = 0; i < k; i++)
 	    {
-	        if (input[i] > max)
+	        if (count[i] > max)
 	        {
-	            max = input[i];
+	            max = count[i];
 	            result = i;
 	        }
 	    }
+	    
+	    //for (int i = 0; i< size; i++)
+	    	//input[i] = input[i]%size;
+	    
 	    return result;
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int input[] = {2, 3, 3, 5, 3, 4, 1, 7, 7, 7, 9,8,8,8, 9, 8};
-		int result = maxRepeating(input, 10);
-		System.out.println("Maximun repeating word is -> " + result);
-		int x = 2%7;
-		System.out.println(x);
+		//int input[] = {2, 3, 3, 5, 3, 4, 1, 7, 7, 7, 9, 8, 8, 8, 9, 8};
+		//int input[]= {17, 9, 13, 13, 13, 13, 13, 13, 13, 14, 13, 13, 13, 13, 13, 13, 15};
+		//int result = maxRepeating(input);
+		int input[]= {33, 46,17,35, 46};
+		final int result = maxRepeating(input, 46);
+		System.out.println("Maximun repeating word is -> " + input[result]);
 
 	}
 

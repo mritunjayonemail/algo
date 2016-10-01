@@ -3,7 +3,7 @@ package com.mj.algo.queue;
 import java.util.Stack;
 
 /*
- * Queue implemntation using two queue
+ * Queue implemntation using two stacks
  */
 public class MyQueue<T> {
 	
