@@ -1,7 +1,7 @@
 package com.mj.algo.dynamic;
 
 /*
- * Maximum sum of array in which two consecutive elements are not allowed.
+ * Maximum sum elements of array in which two consecutive elements are not allowed.
  * It is using dynamic programming.
  */
 public class MaxSum {
