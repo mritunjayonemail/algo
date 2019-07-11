@@ -20,7 +20,7 @@ public class GraphUtil {
  private static void Union(int parent[], int x, int y)
  {
    int xset = find(parent, x);
-   int yset = find(parent, y);
+   int yset = find(parent, y); 
    parent[xset] = yset;
  }
 	

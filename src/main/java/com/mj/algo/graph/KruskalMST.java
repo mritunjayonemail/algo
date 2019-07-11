@@ -37,7 +37,7 @@ public class KruskalMST {
 	
 	public void union(Subset[] subsets, int x, int y){
 		int xroot = find(subsets, x);
-		int yroot = find(subsets, x);
+		int yroot = find(subsets, y);
 		if(subsets[xroot].getRank()<subsets[yroot].getRank()){
 			subsets[xroot].setParent(yroot);
 		}
