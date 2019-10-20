@@ -25,20 +25,44 @@ class RotateMatrix90Degree {
 			System.out.println(mid_value);
 
 			
+//			for (int i = 0; i <= mid_value; i++) {
+//				for (int j = i; j < length-i; j++) {
+//					int c1 = A[i][j];
+//					int c2 = A[j][length-i];
+//					int c3 = A[length-i][length-j];
+//					int c4 = A[length-j][i];
+//					
+//					 A[j][length-i] = c1;
+//				     A[length-i][length-j] = c2;
+//				     A[length-j][i] = c3;
+//				     A[i][j] = c4;
+//		
+//				}
+//	
+//			}
+			
 			for (int i = 0; i <= mid_value; i++) {
-				for (int j = i; j < length-i; j++) {
-					int c1 = A[i][j];
+				for (int j = i; i <= length-i; j++) {
+					
+					
+					int temp = A[i][j];
+					A[i][j]= A[j][length-i];
+					A[j][length-i] = A[length-i][length-j];
+					A[length-i][length-j]= A[length-j][i];
+					A[length-j][i]= temp;
+							
+					/*int c1 = A [i][j];
 					int c2 = A[j][length-i];
 					int c3 = A[length-i][length-j];
 					int c4 = A[length-j][i];
 					
-					 A[j][length-i] = c1;
-				     A[length-i][length-j] = c2;
-				     A[length-j][i] = c3;
-				     A[i][j] = c4;
-		
+					A [i][length-j] = c1;
+					A[length-i][length -j]=c2;
+					A[length-j][i]=c3;
+					A[i][j]=c4;*/
+					
+							
 				}
-	
 			}
 			
 			System.out.println("----");

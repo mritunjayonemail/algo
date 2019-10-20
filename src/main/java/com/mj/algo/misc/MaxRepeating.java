@@ -10,7 +10,7 @@ public class MaxRepeating {
 		int []count = new int[k];
 		
 		for(int index =0 ; index<size; index++){
-			count[input[index]%size] += size;
+			count[input[index]%size] += 1;
 		}
 		
 		int max = Integer.MIN_VALUE;
@@ -35,7 +35,7 @@ public class MaxRepeating {
 		//int input[] = {2, 3, 3, 5, 3, 4, 1, 7, 7, 7, 9, 8, 8, 8, 9, 8};
 		//int input[]= {17, 9, 13, 13, 13, 13, 13, 13, 13, 14, 13, 13, 13, 13, 13, 13, 15};
 		//int result = maxRepeating(input);
-		int input[]= {33, 46,17,35, 46};
+		int input[]= {33, 46,17,35, 35, 35, 46};
 		final int result = maxRepeating(input, 46);
 		System.out.println("Maximun repeating word is -> " + input[result]);
 
