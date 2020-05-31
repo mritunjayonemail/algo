@@ -39,8 +39,8 @@ public class EditDistance {
 	
 	public static void main(String args[]) {
 		
-		String str1 = "sunday"; 
-        String str2 = "saturday"; 
+		String str1 = "INTENTION";
+        String str2 = "EXECUTION";
    
         System.out.println( editDistance( str1 , str2 , str1.length(), str2.length()) ); 
 		

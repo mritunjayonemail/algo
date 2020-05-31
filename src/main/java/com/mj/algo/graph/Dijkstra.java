@@ -3,7 +3,9 @@ package com.mj.algo.graph;
 /*
  * Shortest path between pair of nodes, negative edges are allowed.
  */
-public class Dijkstra {
+public class  Dijkstra {
+
+
 	
 	private static final int vSize = 9;
 	

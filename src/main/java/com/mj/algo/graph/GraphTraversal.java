@@ -60,7 +60,7 @@ public class GraphTraversal {
 	    	   stack.push(root);
 	       }
 	      
-	       while(!queue.isEmpty()){
+	       while(!stack.isEmpty()){
 	    	   GraphNode returnNode =  stack.pop();
 	    	   System.out.println(returnNode.getData());
 	    	   visited.put(returnNode, true);
