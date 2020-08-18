@@ -1,5 +1,8 @@
 package com.mj.algo.bits;
 
+/*
+Binary representation
+ */
 public class BinaryNumber {
 
     private static String convertToBinary(float number, int prec){

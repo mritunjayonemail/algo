@@ -19,6 +19,7 @@ public class TreeBalanceCheck {
 	}
 	
 	public boolean isBalanced(Tree root){
+		// check height balance of tree in O(N^2) time
 		if(root == null){
 			return true;
 		}
@@ -28,6 +29,41 @@ public class TreeBalanceCheck {
 		}
 		else {
 			return isBalanced(root.getLeft()) && isBalanced(root.getRight());
+		}
+	}
+
+
+	public static int checkHeight(Tree root){
+		if(root == null){
+			return 0;
+		}
+
+		int leftHeight = checkHeight(root.getLeft());
+		if (leftHeight==-1){
+			return -1;
+		}
+
+		int rightHeight = checkHeight(root.getRight());
+		if (rightHeight==-1){
+			return -1;
+		}
+
+		int heightDiff = leftHeight - rightHeight;
+		if (Math.abs(heightDiff)>1){
+			return -1;
+		}
+		else{
+			return Math.max(checkHeight(root.getLeft()), checkHeight(root.getRight()));
+		}
+	}
+
+	public static boolean treeBalanceCheckON(Tree root){
+		// check height balance of tree in O(N) time
+		if (checkHeight(root) == -1){
+			return false;
+		}
+		{
+			return true;
 		}
 	}
 	

@@ -4,7 +4,7 @@ package com.mj.algo.dynamic;
 LCS Problem Statement: Given two sequences, find the length of longest subsequence present in both of them.
 A subsequence is a sequence that appears in the same relative order, but not necessarily contiguous.
 For example, “abc”, “abg”, “bdf”, “aeg”, ‘”acefg”, .. etc are subsequences of “abcdefg”.
- */
+*/
 
 public class LCS {
 
@@ -19,7 +19,6 @@ public class LCS {
 			return 1 + lcs(X, Y, m - 1, n - 1);
 		} else
 			return max(lcs(X, Y, m, n - 1), lcs(X, Y, m - 1, n));
-
 	}
 
 	public static void main(String args[]) {
@@ -32,8 +31,7 @@ public class LCS {
 	    int m = X.length; 
 	    int n = Y.length; 
 	  
-	    System.out.println("Length of LCS is" + " " + 
-	                                  lcs( X, Y, m, n ) ); 
+	    System.out.println("Length of LCS is" + " " + lcs( X, Y, m, n ) );
 
 	}
 

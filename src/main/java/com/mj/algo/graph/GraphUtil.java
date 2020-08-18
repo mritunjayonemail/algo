@@ -27,7 +27,7 @@ public class GraphUtil {
  public static boolean isCycle(Graph graph){
 	 
 	 int[] parent = new int[graph.getnVertices()];
-	 
+
 	 for(int i =0; i<graph.getnVertices() ; i++){
 		 parent[i] = -1;
 	 }

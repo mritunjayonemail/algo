@@ -61,7 +61,7 @@ public class HuffmanCode {
 		
 		int n = 6;
 		char[] charArray = { 'a', 'b', 'c', 'd', 'e', 'f' }; 
-	    int[] charfreq = { 5, 9, 12, 13, 16, 45 }; 
+	    int[] charfreq = { 15, 9, 12, 13, 16, 45 };
 		
 		PriorityQueue<HuffmanNode> pq = new PriorityQueue<HuffmanNode>(6, new MyComparator());
 		

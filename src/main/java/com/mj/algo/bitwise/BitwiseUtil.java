@@ -3,7 +3,7 @@ package com.mj.algo.bitwise;
 public class BitwiseUtil {
 	
 	/*
-	 * clear bit at position i
+	 * get bit at position i
 	 */
 	public static boolean getBit(int num, int i){
 		return ((num & (1 << i)) == 0);
