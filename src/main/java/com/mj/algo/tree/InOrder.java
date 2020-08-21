@@ -6,6 +6,7 @@ import java.util.Stack;
 
 /*
 In order tree traversal
+left>root>right
  */
 public class InOrder {
 

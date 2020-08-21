@@ -4,6 +4,10 @@ import com.mj.algo.tree.modal.Tree;
 
 import java.util.Stack;
 
+/*
+Post Order tree traversal
+Left->right->root
+ */
 public class PostOrder {
 
     class StackItem {
@@ -48,7 +52,7 @@ public class PostOrder {
         }
 
     }
-    
+
     public static void main(String args[]){
         Tree child11 = new Tree("D", null, null);
         Tree child22 = new Tree("E", null, null);
