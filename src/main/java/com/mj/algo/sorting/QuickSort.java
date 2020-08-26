@@ -5,7 +5,10 @@ import com.sun.xml.internal.bind.v2.model.annotation.Quick;
 import java.util.Arrays;
 
 //  Quick sort
-
+/*
+Quick sort
+Complexity best case - O(nlogn), worst case - o(n**2)
+ */
 public class QuickSort {
 
     public int quick(int[] arr, int start, int end ){
