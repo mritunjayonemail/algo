@@ -3,7 +3,7 @@ package com.mj.algo.graph.modal;
 public class GraphAdjNode {
 	
 	private GraphNode graphNode;
-	private GraphNode next;
+	private GraphAdjNode next;
 	
 	public GraphNode getGraphNode() {
 		return graphNode;
@@ -11,10 +11,10 @@ public class GraphAdjNode {
 	public void setGraphNode(GraphNode graphNode) {
 		this.graphNode = graphNode;
 	}
-	public GraphNode getNext() {
+	public GraphAdjNode getNext() {
 		return next;
 	}
-	public void setNext(GraphNode next) {
+	public void setNext(GraphAdjNode next) {
 		this.next = next;
 	}
 	

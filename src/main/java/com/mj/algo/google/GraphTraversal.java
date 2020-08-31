@@ -27,8 +27,8 @@ public class GraphTraversal {
                     queue.add(adjNode.getGraphNode());
                 }
                 while(adjNode.getNext()!=null){
-                    if (!visited.get(adjNode.getGraphNode())){
-                        queue.add(adjNode.getNext());
+                    if (!visited.get(adjNode.getNext().getGraphNode())){
+                        queue.add(adjNode.getNext().getGraphNode());
                     }
                 }
             }

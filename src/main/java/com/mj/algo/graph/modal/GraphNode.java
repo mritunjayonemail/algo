@@ -8,6 +8,12 @@ public class GraphNode {
 	
 	private GraphAdjNode adjacentNode;
 
+	public GraphNode(int data, GraphNode next, GraphAdjNode adjacentNode) {
+		this.data = data;
+		this.next = next;
+		this.adjacentNode = adjacentNode;
+	}
+
 	public int getData() {
 		return data;
 	}
