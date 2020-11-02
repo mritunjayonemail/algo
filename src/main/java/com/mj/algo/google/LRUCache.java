@@ -94,6 +94,7 @@ public class LRUCache<K,V> {
         lruCache.getElement("1");
         System.out.println("-------");
         lruCache.addElement("6", "Bijesh");
+        lruCache.addElement("7", "Prashan");
 
         for (String k : lruCache.concurrentHashMap.keySet()) {
             System.out.println(lruCache.concurrentHashMap.get(k));

@@ -2,7 +2,6 @@ package com.mj.algo.google;
 
 import com.mj.algo.graph.modal.GraphAdjNode;
 import com.mj.algo.graph.modal.GraphNode;
-import com.sun.org.apache.xpath.internal.operations.Bool;
 
 import java.util.LinkedHashMap;
 import java.util.PriorityQueue;

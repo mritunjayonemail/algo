@@ -9,7 +9,7 @@ For example, bit difference for 2 and 7 is 2. Binary representation of 2 is 010 
 public class Test {
 
     public static void main(String[] args){
-        int i = 1;
-        System.out.println(1<<1);
+        int num = 3999;
+        System.out.println(num / 1000);
     }
 }
