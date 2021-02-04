@@ -10,7 +10,7 @@ import java.util.*;
 Topological sorting of graph
 Let S be a directed gaph without cycles(or a partially ordered set). A topological
 sort T of S is a linear ordering of the nodes of S which preserves the original partial ordring of S.
-That is, if u<v is S(i.e., if therre is a path from u to v in S), then u comes before v in the linear ordering T.
+That is, if u<v is S(i.e., if there is a path from u to v in S), then u comes before v in the linear ordering T.
  */
 public class TopologicalSorting {
 
