@@ -81,5 +81,5 @@ public class PancakeSort {
             System.out.println(i);
         }
     }
-    
+
 }

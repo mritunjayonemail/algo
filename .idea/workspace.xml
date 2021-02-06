@@ -36,25 +36,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d655de7-0be1-4f0c-a3e6-3c67658b792c" name="Default Changelist" comment="pom update">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mj/algo/matrix/SubMatrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mj/algo/sorting/PancakeSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mj/java8/Apple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mj/java8/AppleGreenColorPredicate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mj/java8/AppleHeavyWeightPredicate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mj/java8/ApplePredicate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mj/java8/ApplePredicateExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mj/java8/BufferedProcessorExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mj/java8/BufferedReaderProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mj/java8/Dish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mj/java8/StreamExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mj/algo/graph/TopologicalSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mj/algo/graph/TopologicalSorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mj/algo/sorting/PancakeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mj/algo/sorting/PancakeSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
