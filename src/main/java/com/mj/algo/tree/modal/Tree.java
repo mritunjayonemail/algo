@@ -1,22 +1,22 @@
 package com.mj.algo.tree.modal;
 
-public class Tree {
+public class Tree<T> {
 	
-	private String value;
+	private T value;
 	private Tree left;
 	private Tree right;
 	
-	public Tree(String value, Tree left, Tree right){
+	public Tree(T value, Tree left, Tree right){
 		this.value = value;
 		this.left = left;
 		this.right= right;
 	}
 
-	public String getValue() {
+	public T getValue() {
 		return value;
 	}
 
-	public void setValue(String value) {
+	public void setValue(T value) {
 		this.value = value;
 	}
 

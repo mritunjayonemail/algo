@@ -28,7 +28,7 @@ public class MinimumCostPath {
         else if (m == 0 && n == 0) 
             return cost[m][n]; 
         else
-            return 1 +
+            return cost[m][n] +
                 min( minCost(cost, m-1, n-1), 
                      minCost(cost, m-1, n),  
                      minCost(cost, m, n-1) ); 

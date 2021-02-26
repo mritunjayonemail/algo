@@ -50,7 +50,7 @@ public class AllCombinations {
 	public static final void main(String args[]){
 		AllCombinations allCombinations= new AllCombinations();
 		int[] input = {2, 3, 1, -2, -1, 0, 2, -3, 0};
-		allCombinations.printCombination(input, 9, 3);
+		allCombinations.printCombination(input, 9, 1);
 	}
 
 }

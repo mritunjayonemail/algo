@@ -13,7 +13,7 @@ public class TreeTraversal {
 
 	private Map<Integer, String> valuesMap = new HashMap<Integer, String>();
 	
-	private void constructLevelOrder(Tree root, int level){
+	private void constructLevelOrder(Tree<String> root, int level){
 		//print values
 		if(valuesMap.containsKey(level)){
 			String value = valuesMap.get(level);
@@ -44,7 +44,7 @@ public class TreeTraversal {
 	    }
 	}
 	
-	private void preOrder(Tree root){
+	private void preOrder(Tree<String> root){
 		if(root!=null){
 			System.out.println(root.getValue());
 		}
@@ -56,7 +56,7 @@ public class TreeTraversal {
 		}
 	}
 	
-	private void postOrder(Tree root){	
+	private void postOrder(Tree<String> root){
 		if(root.getLeft()!=null){
 			postOrder(root.getLeft());
 		}
@@ -68,7 +68,7 @@ public class TreeTraversal {
 		}
 	}
 	
-	private void inOrder(Tree root){	
+	private void inOrder(Tree<String> root){
 		if(root.getLeft()!=null){
 			inOrder(root.getLeft());
 		}
@@ -119,15 +119,15 @@ public class TreeTraversal {
 	
 	
 	public static void main(String args[]){
-		Tree child11 = new Tree("D", null, null);
-		Tree child22 = new Tree("E", null, null);
-		Tree child33 = new Tree("F", null, null);
-		Tree child44 = new Tree("G", null, null);
+		Tree<String> child11 = new Tree<String>("D", null, null);
+		Tree<String> child22 = new Tree<String>("E", null, null);
+		Tree<String> child33 = new Tree<String>("F", null, null);
+		Tree<String> child44 = new Tree<String>("G", null, null);
 		
-		Tree child1 =  new Tree("B", child11, child22);
-		Tree child2 =  new Tree("C", child33, child44);
+		Tree<String> child1 =  new Tree<String>("B", child11, child22);
+		Tree<String> child2 =  new Tree("C", child33, child44);
 		
-		Tree root = new Tree("A", child1, child2);
+		Tree<String> root = new Tree<String>("A", child1, child2);
 		TreeTraversal treeTraversal = new TreeTraversal();
 		//level order
 		treeTraversal.constructLevelOrder(root,1);
