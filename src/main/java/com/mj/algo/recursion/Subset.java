@@ -24,10 +24,8 @@ public class Subset {
 
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> subsets = new ArrayList<>();
-
         subsetRec(subsets, nums, 0, new ArrayList<Integer>());
         return subsets;
-
     }
 
     public void subsetRec(List<List<Integer>> subsets, int[] nums, int index, List<Integer> current){

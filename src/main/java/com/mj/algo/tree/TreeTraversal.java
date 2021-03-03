@@ -116,8 +116,53 @@ public class TreeTraversal {
 		}
 		return node;
 	}
-	
-	
+
+	public int getHeight(Tree node){
+		if(node == null){
+			return 0;
+		}
+		int leftHeight = 0;
+		int rightHeight = 0;
+		if (node.getLeft() !=null)
+			leftHeight = getHeight(node.getLeft());
+		if (node.getRight() !=null)
+			rightHeight = getHeight(node.getLeft());
+		return 1 + Math.max(leftHeight, rightHeight);
+
+	}
+
+	int getWidth(Tree node, int level)
+	{
+		if (node == null)
+			return 0;
+
+		if (level == 1)
+			return 1;
+		else if (level > 1)
+			return getWidth(node.getLeft(), level - 1)
+					+ getWidth(node.getRight(), level - 1);
+		return 0;
+	}
+
+	int getMaxWidth(Tree node)
+	{
+		int maxWidth = 0;
+		int width;
+		int h = getHeight(node);
+		int i;
+
+        /* Get width of each level and compare
+           the width with maximum width so far */
+		for (i = 1; i <= h; i++) {
+			width = getWidth(node, i);
+			if (width > maxWidth)
+				maxWidth = width;
+		}
+
+		return maxWidth;
+	}
+
+
 	public static void main(String args[]){
 		Tree<String> child11 = new Tree<String>("D", null, null);
 		Tree<String> child22 = new Tree<String>("E", null, null);
@@ -130,7 +175,7 @@ public class TreeTraversal {
 		Tree<String> root = new Tree<String>("A", child1, child2);
 		TreeTraversal treeTraversal = new TreeTraversal();
 		//level order
-		treeTraversal.constructLevelOrder(root,1);
+		// treeTraversal.constructLevelOrder(root,1);
 		//treeTraversal.printValueMap();
 		//pre order
 		//treeTraversal.preOrder(root);
@@ -140,6 +185,13 @@ public class TreeTraversal {
 		
 		//in order
 		//treeTraversal.inOrder(root);
+
+		// height
+		int height = treeTraversal.getHeight(root);
+		System.out.println("Height of tree is " + height);
+
+		int width = treeTraversal.getWidth(root, height);
+		System.out.println("Height of tree is " + width);
 		
 	}
 

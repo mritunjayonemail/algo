@@ -1,4 +1,4 @@
-package com.mj.algo.recursion;
+package com.mj.algo.dynamic;
 
 import java.util.Arrays;
 
