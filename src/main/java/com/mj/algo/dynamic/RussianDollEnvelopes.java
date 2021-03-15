@@ -17,6 +17,12 @@ Input: [[5,4],[6,4],[6,7],[2,3]]
 Output: 3
 Explanation: The maximum number of envelopes you can Russian doll is 3 ([2,3] => [5,4] => [6,7]).
 Complexity of algorithm is O(N^2)
+
+Constraints:
+
+1 <= envelopes.length <= 5000
+envelopes[i].length == 2
+1 <= wi, hi <= 104
  */
 public class RussianDollEnvelopes {
 

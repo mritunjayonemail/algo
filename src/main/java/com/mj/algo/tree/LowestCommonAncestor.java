@@ -23,17 +23,10 @@ public class LowestCommonAncestor {
 		if(left !=null && right !=null){
 			return ptr;
 		}
-		else {
-			if(left == null && right !=null){
-				return findLCA(ptr.getRight(), n1, n2);
-			}
-			else if(right == null && left !=null){
-				return findLCA(ptr.getLeft(), n1, n2);
-			}
-			else {
-				return null;
-			}
+		if(left == null && right !=null){
+			return findLCA(ptr.getRight(), n1, n2);
 		}
+		return left!=null?left:right;
 	}
 	
 	public static void main(String args[]){

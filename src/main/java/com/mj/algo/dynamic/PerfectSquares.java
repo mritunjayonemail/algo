@@ -18,6 +18,10 @@ Input: n = 13
 Output: 2
 Explanation: 13 = 4 + 9.
 Complexity N*SQRT(N)
+
+Constraints:
+
+1 <= n <= 104
  */
 public class PerfectSquares {
     public int numSquares(int n) {

@@ -36,6 +36,6 @@ public class LIS {
     public static void main(String args[]){
         int[] nums = {0, 4, 12, 2, 10, 6, 9, 13, 3, 11, 7, 15};
         int maxSeq = new LIS().findLIS(nums);
-        System.out.printf("Maximum sum is %1d", maxSeq);
+        System.out.printf("Maximum size is %1d", maxSeq);
     }
 }

@@ -43,7 +43,7 @@ public class AllPermutations {
 	
 	
 	public static final void main(String args[]){
-		String input = "ABCDE";
+		String input = "123";
 		AllPermutations allPermutations= new AllPermutations();
 		allPermutations.allPermutations(input, 0, input.length());
 	}
